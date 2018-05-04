@@ -1,6 +1,7 @@
 // Native
 const { format } = require('url')
 const fs = require('fs');
+const path = require('path');
 
 // Packages
 const { BrowserWindow, app } = require('electron')
@@ -17,7 +18,7 @@ app.on('ready', async () => {
     height: 600,
     title: 'Crypto - DES',
     show: false,
-    icon: __dirname + '/static/icons/windows.ico'
+    icon: path.join(__dirname, 'static/icons/windows.ico')
   });
 
   mainWindow.once('ready-to-show', mainWindow.show);
@@ -42,7 +43,7 @@ const createDesWindow = ({message, key}) => {
     height: 600,
     title: 'DES',
     show: false,
-    icon: __dirname + '/static/icons/windows.ico'
+    icon: path.join(__dirname, 'static/icons/windows.ico')
   });
 
   desWindow.once('ready-to-show', desWindow.show);

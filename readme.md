@@ -41,3 +41,10 @@ Download and extract the zip file and run `crypto-des`
 - Click the 📋 icon next to any block of bits to copy them to your clipboard
 - Click any bit to select `Color` or `Switch`
 - Save the resulting cipher in the Total page
+
+# Screenshots
+![Screen Shot 1](screenshots/screen-shot-1.png)
+![Screen Shot 2](screenshots/screen-shot-2.png)
+![Screen Shot 4](screenshots/screen-shot-4.png)
+![Screen Shot 5](screenshots/screen-shot-5.png)
+![Screen Shot 3](screenshots/screen-shot-3.png)

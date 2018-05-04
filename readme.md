@@ -13,6 +13,8 @@
     
 # Installation
 
+> Downloads can be found under [Releases](https://github.com/karaggeorge/crypto-des/releases) 
+
 ### Windows
 Download and run the executable
 

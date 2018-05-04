@@ -1,13 +1,14 @@
 {
-  "name": "Crypto - DES",
+  "name": "crypto-des",
   "version": "1.0.0",
   "main": "main/index.js",
   "license": "MIT",
   "repository": "leo/electron-next-skeleton",
   "scripts": {
-    "start": "electron .",
-    "build": "next build renderer && next export renderer",
-    "dist": "npm run build && bundle"
+    "start": "electron main",
+    "build": "yarn build-renderer && yarn build-app",
+    "build-app": "build --platform all",
+    "build-renderer": "next build renderer && next export renderer"
   },
   "bundle": {
     "name": "ElectronNext"
@@ -15,13 +16,35 @@
   "devDependencies": {
     "bundle": "^2.0.1",
     "electron": "^2.0.0",
+    "electron-builder": "^20.11.1",
     "next": "^4.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
   "dependencies": {
     "app-root-path": "^2.0.1",
+    "electron-builder-squirrel-windows": "^20.13.1",
     "electron-is-dev": "^0.3.0",
-    "electron-next": "^3.1.3"
+    "electron-next": "^3.1.3",
+    "randomcolor": "^0.5.3",
+    "react-textarea-autosize": "^6.1.0"
+  },
+  "build": {
+    "appId": "com.gkaragkiaouris.crypto",
+    "files": [
+      "**/*",
+      "!renderer",
+      "renderer/out"
+    ],
+    "win": {
+      "icon": "main/static/icons/windows.ico"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "main/static/icons/mac.icns",
+      "extendInfo": {
+        "LSUIElement": 1
+      }
+    }
   }
 }

@@ -3,5 +3,6 @@ exports.webpack = config => Object.assign(config, {
 })
 
 exports.exportPathMap = () => ({
-  '/start': { page: '/start' }
+  '/start': { page: '/start' },
+  '/main': { page: '/main' }
 })
